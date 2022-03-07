@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;700;800&display=swap");
+.footer {
+  font-family: "manrope";
+  background-color: #222222;
+  padding-top: 60px;
+  &__contact {
+    display: flex;
+    justify-content: space-around;
+
+    &__atlavia {
+      &:hover {
+        transition: all 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55) !important;
+        transform: translateY(-10px) !important;
+
+        span {
+          color: #fff;
+        }
+      }
+      span {
+        color: #999;
+        font-size: 24px;
+        font-weight: 100;
+      }
+      p {
+        color: white;
+        font-size: 15px;
+        margin-top: 40px;
+        opacity: 0;
+        transition: all 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+        &:hover {
+          opacity: 1;
+          transform: translateY(-40px);
+          padding-top: 10px;
+        }
+      }
+    }
+  }
+  &__adresse {
+    margin-top: 80px;
+    margin-left: 50px;
+    padding-bottom: 50px;
+    p {
+      font-size: 13px;
+      color: white;
+      margin-bottom: 0;
+      font-weight: 300;
+    }
+    &__bottom {
+      display: flex;
+      justify-content: space-between;
+      color: white;
+      ul {
+        width: 50%;
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 30px;
+        list-style: none;
+        li {
+          margin-right: 10px;
+          font-size: 12px;
+          color: #efefef;
+          font-weight: 600;
+          position: relative;
+
+          display: inline-block;
+        }
+        ::after {
+          content: "";
+          display: block;
+          height: 1px;
+          background-color: white;
+          transition-property: right, width;
+          transition-duration: 0.2s;
+          transition-timing-function: ease-out;
+          position: absolute;
+          left: 0;
+          right: 100%;
+        }
+        :hover::after {
+          right: 0;
+        }
+      }
+      .top {
+        opacity: 1;
+        padding: 10px;
+        color: #fff;
+        width: 50%;
+        display: flex;
+        justify-content: flex-end;
+        cursor: pointer;
+        &:hover {
+          -moz-animation: toTop 2s infinite;
+          -webkit-animation: toTop 2s infinite;
+          animation: toTop 2s infinite;
+
+          @keyframes toTop {
+            0%,
+            20%,
+            50%,
+            80%,
+            100% {
+              transform: translateY(0);
+            }
+            40% {
+              transform: translateY(-15px);
+            }
+            60% {
+              transform: translateY(-5px);
+            }
+          }
+        }
+      }
+      .top::before {
+        border-top: 2px solid;
+        border-left: 2px solid;
+        display: block;
+        position: absolute;
+        content: "";
+        width: 10px;
+        height: 10px;
+        transform: rotate(45deg);
+      }
+    }
+  }
+}

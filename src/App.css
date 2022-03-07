@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;700;800&display=swap");
+
+.navbar {
+  background-color: transparent;
+}
+
+.navbar.colorChange {
+  background-color: rgb(255, 255, 255);
+  /* background-image: url(); */
+}
+h1 {
+  font-size: 48px;
+  font-family: "Manrope" !important;
+}
+.container {
+  padding-left: 15px;
+}
+p {
+  margin: 0 0 10px 0;
+  font-size: 18px;
+  font-family: "Montserrat";
+  color: #434343;
+  font-weight: 500;
+  width: 100%;
+  line-height: 25px;
+}
+html,
+body {
+  scroll-behavior: smooth;
+}
