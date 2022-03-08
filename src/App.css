@@ -21,7 +21,7 @@ p {
   font-family: "Montserrat";
   color: #434343;
   font-weight: 500;
-  width: 100%;
+  width: auto;
   line-height: 25px;
 }
 html,

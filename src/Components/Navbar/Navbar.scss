@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css?family=Lora:400,400i,700");
+
+@mixin sp-layout {
+  @media screen and (max-width: 750px) {
+    @content;
+  }
+}
+
+@mixin pc-layout {
+  @media screen and (min-width: 751px) {
+    @content;
+  }
+}
+nav {
+  position: fixed !important;
+  max-width: 900px;
+  left: 3.5%;
+  top: 1px;
+}
+.logo img {
+  height: 60px;
+  margin-top: 12%;
+}
+
+p {
+  margin: 0;
+}
+
+#burger-toggle {
+  position: absolute;
+  &:not(:checked) + .menu {
+    visibility: hidden;
+    opacity: 0;
+
+    transition: visibility 0s linear 2s, opacity 2s linear;
+  }
+
+  &:checked {
+    & ~ .menu {
+      opacity: 1;
+      animation: 0.5s anim-menu ease-out forwards;
+
+      @keyframes anim-menu {
+        0% {
+          opacity: 0;
+        }
+
+        100% {
+          opacity: 1;
+        }
+      }
+      visibility: visible;
+
+      .menu-nav {
+        display: block;
+        animation: 2s anim-popoutin ease-out forwards;
+      }
+      /* crops animations that exceeds one line area */
+
+      @keyframes anim-popoutin {
+        0% {
+          transform: scale(0);
+          opacity: 0;
+        }
+        25% {
+          transform: scale(1);
+          opacity: 1;
+        }
+        50% {
+          transform: scale(1);
+          opacity: 1;
+        }
+        100% {
+          /* animate nothing to add pause at the end of animation */
+          transform: scale(1);
+          opacity: 1;
+        }
+      }
+      .menu-nav-link span div,
+      img,
+      .title p {
+        transform: translateY(0);
+      }
+
+      .image-link {
+        @for $i from 1 through 4 {
+          &:nth-child(#{$i}) img {
+            transition-delay: 0.1s + 0.08s * $i;
+          }
+        }
+      }
+    }
+
+    & ~ .burger-menu {
+      .line {
+        &::after {
+          transform: translateX(0);
+        }
+
+        &:nth-child(1) {
+          transform: translate(2px, 9px) rotate(45deg);
+        }
+
+        &:nth-child(2) {
+          transform: scaleX(0);
+        }
+
+        &:nth-child(3) {
+          transform: translate(1px, -4px) rotate(-45deg);
+        }
+      }
+    }
+  }
+}
+
+.burger-menu {
+  --burger-menu-radius: 4em;
+  transform: scale(1);
+  position: fixed;
+  top: 2vh;
+  // left: 5vw;
+  right: 2%;
+  z-index: 100;
+  display: block;
+  width: var(--burger-menu-radius);
+  height: var(--burger-menu-radius);
+  outline: none;
+  cursor: pointer;
+
+  .line {
+    position: absolute;
+    left: 25%;
+    width: 30%;
+    height: 2.7px;
+    background: #808080;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.5s;
+
+    &:nth-child(1) {
+      top: 30%;
+    }
+
+    &:nth-child(2) {
+      top: 41%;
+    }
+
+    &:nth-child(3) {
+      top: 51%;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: var(--primary-color-darker);
+      transform: translateX(-100%);
+      transition: 0.25s;
+    }
+
+    // @for $i from 2 through 3 {
+    //   &:nth-child(#{$i})::after {
+    //     transition-delay: 0.1s * ($i - 1);
+    //   }
+    // }
+  }
+
+  // &:hover {
+  //   .line::after {
+  //     transform: translateX(0);
+  //   }
+  // }
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #0070c7 !important;
+  opacity: 0;
+  overflow-x: hidden;
+  visibility: hidden;
+
+  @include sp-layout {
+    display: block;
+  }
+
+  &-nav {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    list-style-type: none;
+
+    @include sp-layout {
+      flex-direction: column;
+    }
+
+    &-item {
+      flex: 1;
+    }
+
+    &-link {
+      position: relative;
+      display: inline-flex;
+      font-size: 48px;
+      color: #dddddd !important;
+      text-decoration: none;
+      font-family: "Manrope";
+      line-height: 56px;
+      font-weight: bold;
+      padding: 2px 0px;
+      span {
+        overflow: hidden;
+
+        div {
+          transform: translateY(102%);
+        }
+      }
+
+      &::after {
+        position: absolute;
+        content: "";
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background: var(--primary-color);
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform 0.5s;
+      }
+
+      &:hover::after {
+        transform: scaleX(1);
+        transform-origin: left;
+      }
+    }
+  }
+}
