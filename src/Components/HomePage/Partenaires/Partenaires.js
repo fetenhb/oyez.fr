@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import google from "../../Images/google.png";
-import elastic from "../../Images/elastic.png";
-import apollo from "../../Images/apollo.png";
+import google from "../../../Images/google.png";
+import elastic from "../../../Images/elastic.png";
+import apollo from "../../../Images/apollo.png";
 const Partenaire = styled.div`
   display: flex;
   justify-content: space-between;

@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import methodes from "../../Images/Méthodes.jpg";
+import methodes from "../../../Images/Méthodes.jpg";
 import ButtonPlusBlack from "../Button/ButtonPlusBlack";
 const MethodeStyle = styled.div`
   background-image: url(${methodes});

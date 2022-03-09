@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import styled from "styled-components";
-import bgHeader from "../../Images/headerBg.jpg";
-import ButtonPlus from "../Button/ButtonPlus";
+import bgHeader from "../../../Images/headerBg.jpg";
+import ButtonPlus from "../../HomePage/Button/ButtonPlus";
 
 const HeaderStyle = styled.div`
   @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;700&display=swap");

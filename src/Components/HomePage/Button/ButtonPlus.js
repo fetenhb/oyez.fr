@@ -30,7 +30,11 @@ const theme = {
 };
 
 const ButtonPlus = () => {
-  return <Button theme={theme}>En savoir +</Button>;
+  return (
+    <Button theme={theme} style={{ cursor: "pointer" }}>
+      En savoir +
+    </Button>
+  );
 };
 
 export default ButtonPlus;

@@ -1,12 +1,9 @@
 import React from "react";
-
 import { Technologies, Services, Expertises } from "./Data";
-
 import "./Card.scss";
 import ButtonPlusBlack from "../Button/ButtonPlusBlack";
 import { Separation } from "../Separation/Separation";
 const Card = (props) => {
-  console.log(Services);
   return (
     <div className="container">
       {props.content === "expertise" ? (

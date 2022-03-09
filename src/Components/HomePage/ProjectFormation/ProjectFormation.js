@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import realisations from "../../Images/realisations.jpg";
-import tunis from "../../Images/tunis.jpg";
+import realisations from "../../../Images/realisations.jpg";
+import tunis from "../../../Images/tunis.jpg";
 
 import { Button } from "../Button/ButtonPlus";
 
