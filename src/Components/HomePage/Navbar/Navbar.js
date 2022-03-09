@@ -6,6 +6,7 @@ import "../../../App.css";
 import logo from "../../../Images/logo-oyez.gif";
 import logoWhite from "../../../Images/logo_oyez_white2.png";
 import $ from "jquery";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [colorChange, setColorchange] = useState(false);
@@ -34,17 +35,22 @@ const Navbar = () => {
         </label>
         <div class="menu linee">
           {" "}
-          <a href="#">
-            <img src={logoWhite} className="menu-logo" />
-          </a>
+          <Link to="/">
+            <a>
+              <img src={logoWhite} className="menu-logo" />
+            </a>
+          </Link>
           <div class="menu-inner  pop-outin">
             <ul class="menu-nav ">
               <li class="menu-nav-item">
-                <a class="menu-nav-link " href="#">
-                  <span>
-                    <div>Expertises</div>
-                  </span>
-                </a>
+                <Link to="/uni-retail-marketing-data-expertise-groupe-oyez">
+                  {" "}
+                  <a class="menu-nav-link " href="#">
+                    <span>
+                      <div>Expertises</div>
+                    </span>
+                  </a>
+                </Link>
               </li>
               <li class="menu-nav-item">
                 <a class="menu-nav-link" href="#">

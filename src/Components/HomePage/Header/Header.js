@@ -12,7 +12,7 @@ const HeaderStyle = styled.div`
   width: 100%;
   height: 641px;
 `;
-const Content = styled.div`
+export const Content = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -53,7 +53,7 @@ const Content = styled.div`
     padding: 3px;
   }
 `;
-const Span = styled.span`
+export const Span = styled.span`
   font-family: "Manrope", sans-serif;
   font-size: 20px;
   font-weight: 700;
