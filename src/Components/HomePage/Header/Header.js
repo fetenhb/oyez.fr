@@ -16,7 +16,6 @@ export const Content = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* text-align: left; */
   padding-top: 180px;
   max-width: 900px;
   margin-right: auto;

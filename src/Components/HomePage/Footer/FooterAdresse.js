@@ -2,7 +2,7 @@ import React from "react";
 import "./Footer.scss";
 const FooterAdresse = () => {
   return (
-    <div className="footer">
+    <div className="footer" style={{ backgroundColor: "#2C2A26" }}>
       <div className="footer__adresse">
         <p>
           <strong>PARIS</strong> : Espace Niemeyer - 2 place du Colonel Fabien -

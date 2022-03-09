@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;700;800&display=swap");
-
+/* @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;700;800&family=Montserrat:ital,wght@0,200;0,300;1,200&display=swap"); */
 .navbar {
   background-color: transparent;
 }
@@ -27,4 +26,5 @@ p {
 html,
 body {
   scroll-behavior: smooth;
+  line-height: 25px;
 }
