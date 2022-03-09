@@ -20,7 +20,10 @@ const Navbar = () => {
   return (
     <nav className={colorChange ? "navbar colorChange" : "navbar"}>
       <div className="logo">
-        <img src={logo} />
+        <a href="#">
+          {" "}
+          <img src={logo} />
+        </a>
       </div>
       <div>
         <input type="checkbox" id="burger-toggle" />
@@ -31,7 +34,9 @@ const Navbar = () => {
         </label>
         <div class="menu linee">
           {" "}
-          <img src={logoWhite} className="menu-logo" />
+          <a href="#">
+            <img src={logoWhite} className="menu-logo" />
+          </a>
           <div class="menu-inner  pop-outin">
             <ul class="menu-nav ">
               <li class="menu-nav-item">

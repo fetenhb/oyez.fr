@@ -30,6 +30,20 @@ const Content = styled.div`
     line-height: 54px;
     text-align: left;
     font-family: "Manrope", sans-serif;
+    @media (max-width: 950px) {
+      width: 828px;
+      padding-left: 50px;
+    }
+    @media (max-width: 800px) {
+      width: 698px;
+      padding-left: 30px;
+    }
+    @media (max-width: 800px) {
+      width: 600px;
+    }
+    @media (max-width: 600px) {
+      width: 500px;
+    }
   }
   p {
     margin: 0;
