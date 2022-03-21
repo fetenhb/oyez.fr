@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import methodes from "../../../Images/Méthodes.jpg";
 import ButtonPlusBlack from "../Button/ButtonPlusBlack";
@@ -11,6 +12,7 @@ const MethodeStyle = styled.div`
   height: auto;
   h1,
   p {
+    font-family: "Montserrat light";
     margin-bottom: 60px;
     width: 420px;
   }
@@ -25,7 +27,10 @@ const Methode = () => {
           pour faire des projets digitaux des vecteurs de transformation des
           organisations.
         </p>
-        <ButtonPlusBlack />
+        <Link to="/methode-groupe-oyez">
+          {" "}
+          <ButtonPlusBlack />
+        </Link>{" "}
       </div>
     </MethodeStyle>
   );

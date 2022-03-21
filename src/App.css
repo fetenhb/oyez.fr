@@ -9,10 +9,12 @@
 }
 h1 {
   font-size: 48px;
+  line-height: 54px;
   font-family: "Manrope" !important;
 }
 .container {
   padding-left: 15px;
+  padding-right: 15px;
 }
 p {
   margin: 0 0 10px 0;
@@ -26,5 +28,20 @@ p {
 html,
 body {
   scroll-behavior: smooth;
-  line-height: 25px;
+}
+::selection {
+  background: #000;
+  color: #fff;
+  text-shadow: none;
+}
+
+.counters {
+  color: #000;
+  padding: 40px 20px;
+  border-top: 3px lightskyblue solid;
+}
+
+.counters .counter {
+  font-size: 45px;
+  margin: 10px 0;
 }

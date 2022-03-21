@@ -1,5 +1,6 @@
-import React, { useEffect } from "react";
+import React from "react";
 import $ from "jquery";
+
 import bmw from "../../../Images/bmw.png";
 import boucheron from "../../../Images/boucheron.png";
 import but from "../../../Images/but.png";

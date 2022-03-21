@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;700;800&family=Montserrat:ital,wght@0,200;0,300;0,400;1,200&display=swap");
+.link .image {
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+}
+.link {
+  overflow: hidden;
+  cursor: pointer;
+  &:hover {
+    .image {
+      -webkit-transform: scale3d(1.2, 1.2, 1);
+      transform: scale3d(1.1, 1.1, 1);
+    }
+    .titleProject {
+      opacity: 1;
+    }
+  }
+}
+.item {
+  background: linear-gradient(
+    to bottom,
+    rgba(99, 99, 99, 0) 50%,
+    rgba(0, 0, 0, 0.62) 100%
+  );
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+.titleProject {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 900;
+  background-color: #ff2e4d;
+  padding-left: 6px;
+  padding-right: 6px;
+  opacity: 0;
+  display: block;
+  color: #ffffff;
+  font-family: "Montserrat" !important;
+}
+
+.title-container {
+  display: flex;
+  width: 80%;
+  height: 95%;
+  padding-right: auto;
+  align-items: flex-end;
+  padding-left: 10%;
+}
+// .tit {
+//   vertical-align: bottom;
+//   display: table-cell;
+// }
+
+.vid {
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  height: 89%;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+  opacity: 1;
+
+  transition-property: opacity;
+  transition-duration: 1000ms;
+}
+.head {
+  width: 100%;
+  position: relative;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.btn {
+  background-color: #7f7fff;
+  border: 2px solid #7f7fff;
+  border-radius: 10px;
+  color: white;
+  font-size: 15px;
+  padding: 10px 15px;
+  margin-bottom: 15px;
+
+  &:hover {
+    background-color: white;
+    color: #7f7fff;
+    cursor: pointer;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+.play {
+  border: rgb(0, 0, 0) 5px solid;
+  width: 60px;
+  height: 60px;
+  margin-right: 15px;
+  border-radius: 100px;
+  cursor: pointer;
+  i {
+    top: 0;
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+
+    margin-left: 7px;
+  }
+}
+.mystyle {
+  display: none;
+}

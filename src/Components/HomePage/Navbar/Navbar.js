@@ -10,8 +10,9 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [colorChange, setColorchange] = useState(false);
+
   const changeNavbarColor = () => {
-    if (window.scrollY >= 600) {
+    if (window.scrollY >= 400) {
       setColorchange(true);
     } else {
       setColorchange(false);
@@ -53,39 +54,49 @@ const Navbar = () => {
                 </Link>
               </li>
               <li class="menu-nav-item">
-                <a class="menu-nav-link" href="#">
-                  <span>
-                    <div>Services</div>
-                  </span>
-                </a>
+                <Link to="/engineering-consulting-technologie-creativite-metiers-groupe-oyez">
+                  <a class="menu-nav-link" href="#">
+                    <span>
+                      <div>Services</div>
+                    </span>
+                  </a>
+                </Link>
               </li>
               <li class="menu-nav-item">
-                <a class="menu-nav-link" href="#">
-                  <span>
-                    <div>Méthode</div>
-                  </span>
-                </a>
+                <Link to="/methode-groupe-oyez">
+                  <a class="menu-nav-link" href="#">
+                    <span>
+                      <div>Méthode</div>
+                    </span>
+                  </a>
+                </Link>
               </li>
               <li class="menu-nav-item">
-                <a class="menu-nav-link" href="#">
-                  <span>
-                    <div>Projets</div>
-                  </span>
-                </a>
+                <Link to="/projets-groupe-oyez">
+                  <a class="menu-nav-link" href="#">
+                    <span>
+                      <div>Projets</div>
+                    </span>
+                  </a>
+                </Link>
               </li>{" "}
               <li class="menu-nav-item">
-                <a class="menu-nav-link" href="#">
-                  <span>
-                    <div>Médias</div>
-                  </span>
-                </a>
+                <Link to="/medias">
+                  <a class="menu-nav-link" href="#">
+                    <span>
+                      <div>Médias</div>
+                    </span>
+                  </a>
+                </Link>
               </li>{" "}
               <li class="menu-nav-item">
-                <a class="menu-nav-link" href="#">
-                  <span>
-                    <div>Contact</div>
-                  </span>
-                </a>
+                <Link to="/contact">
+                  <a class="menu-nav-link" href="#">
+                    <span>
+                      <div>Contact</div>
+                    </span>
+                  </a>
+                </Link>
               </li>
             </ul>
           </div>

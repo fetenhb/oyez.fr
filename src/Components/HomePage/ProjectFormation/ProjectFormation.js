@@ -14,7 +14,7 @@ const ProjectFormation = (props) => {
     background-position: center center;
     background-repeat: no-repeat;
     height: 100%;
-
+    margin-top: 50px;
     margin-bottom: 100px;
     padding-top: 30px;
     padding-bottom: 30px;
@@ -24,6 +24,7 @@ const ProjectFormation = (props) => {
       color: white;
       font-size: 20px;
       margin-bottom: 10px;
+      font-family: Manrope !important;
     }
   `;
   return (
