@@ -1,9 +1,14 @@
 import React from "react";
-import { MiniParagraph, MiniTitle, Paragraph } from "../../ProjectsStyle";
+import {
+  MiniParagraph,
+  MiniTitle,
+  Paragraph,
+  Container,
+} from "../../ProjectsStyle";
 
 const SectionOne = () => {
   return (
-    <div style={{ width: "870px", margin: "0 auto" }}>
+    <Container>
       <Paragraph style={{ marginTop: "100px", marginBottom: "50px" }}>
         Un dispositif digital avec un double objectif d’extension de gamme
         digitalisé en magasin et de transformation du parcours et de
@@ -48,7 +53,7 @@ const SectionOne = () => {
         utilisation vendeur, un moteur de recherche puissant facilitant l’accès
         a l’ensemble des gammes et une aide aux choix inspirante.
       </MiniParagraph>
-    </div>
+    </Container>
   );
 };
 

@@ -6,6 +6,9 @@ import BNP01 from "../../../../Images/BNP-01.png";
 import SectionTwo from "./BnpComponents/SectionTwo.js";
 import SectionThree from "./BnpComponents/SectionThree.js";
 import BNP02 from "../../../../Images/BNP-02.jpg";
+import ProjetsInteressee from "../ProjetsInteressee.js";
+import Projets from "./BnpComponents/Projets.js";
+import ProjetsFooter from "../ProjetsFooter.js";
 
 const BNP = () => {
   return (
@@ -19,6 +22,9 @@ const BNP = () => {
       <div style={{ textAlign: "center", marginBottom: "50px" }}>
         <img src={BNP02} style={{ width: "50%" }} />
       </div>
+      <ProjetsInteressee />
+      <Projets />
+      <ProjetsFooter />
     </div>
   );
 };

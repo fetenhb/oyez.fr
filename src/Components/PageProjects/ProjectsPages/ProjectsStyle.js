@@ -105,7 +105,7 @@ export const InfinitiImg = styled.div`
   height: 600px;
 `;
 export const Container = styled.div`
-  width: 870px;
+  max-width: 900px;
   margin: 0 auto;
 `;
 export const Projet = styled.div`
@@ -118,14 +118,15 @@ export const SectionProjet = styled.div`
   color: #ffffff;
 `;
 export const ImgColumn = styled.div`
-  width: 50%;
   height: 100%;
+  width: 50%;
+  overflow: hidden;
 `;
 export const BackColumn = styled.div`
   background-image: url(${(props) => props.imgUrl});
   background-size: cover;
   background-position: center center;
-  position: absolute;
-  height: 60%;
-  width: 50%;
+
+  height: 100%;
+  width: 100%;
 `;

@@ -7,7 +7,7 @@ import carrefourHero from "../../../../../Images/carrefour-hero-image-1024x507.j
 const Image = styled.div`
   text-align: center;
   img {
-    width: auto;
+    width: 70%;
     margin-bottom: 100px;
   }
 `;

@@ -13,7 +13,8 @@
       -webkit-transform: scale3d(1.2, 1.2, 1);
       transform: scale3d(1.1, 1.1, 1);
     }
-    .titleProject {
+    .titleProject,
+    .titleProjectTwo {
       opacity: 1;
     }
   }
@@ -40,7 +41,15 @@
   color: #ffffff;
   font-family: "Montserrat" !important;
 }
-
+.titleProjectTwo {
+  font-size: 30px;
+  color: #ffffff;
+  font-weight: 400;
+  font-family: "Manrope";
+  line-height: 40px;
+  opacity: 0;
+  display: block;
+}
 .title-container {
   display: flex;
   width: 80%;
