@@ -58,7 +58,7 @@ export const Paragraph = styled.div`
 `;
 export const SectionTitle = styled.div`
   color: #000000;
-  font-size: 48px;
+  font-size: 50px;
   margin-top: 70px;
 `;
 export const MiniTitle = styled.div`
@@ -83,7 +83,7 @@ export const Column = styled.div`
   width: 30%;
   padding: 0 15px;
 `;
-const marginTop = "20px";
+
 export const PizzaImg = styled.div`
   background-image: url(${dominos01bis});
   background-size: cover;
@@ -105,7 +105,7 @@ export const InfinitiImg = styled.div`
   height: 600px;
 `;
 export const Container = styled.div`
-  max-width: 900px;
+  max-width: 870px;
   margin: 0 auto;
 `;
 export const Projet = styled.div`
@@ -129,4 +129,7 @@ export const BackColumn = styled.div`
 
   height: 100%;
   width: 100%;
+`;
+export const EspaceVide = styled.div`
+  height: 100px;
 `;
