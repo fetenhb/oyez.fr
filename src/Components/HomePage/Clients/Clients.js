@@ -20,7 +20,7 @@ import Profil from "../../../Images/Profil.png";
 import RENAULT from "../../../Images/RENAULT.png";
 import saintLaurent from "../../../Images/saintLaurent.png";
 import sg from "../../../Images/sg.png";
-
+import OwlCarousel from "react-owl-carousel";
 import "./Client.scss";
 const Clients = () => {
   return (
@@ -29,7 +29,7 @@ const Clients = () => {
         <h1 style={{ padding: "0 0 50px 0" }}>Clients</h1>
 
         <div class="home-demo" style={{ margin: "30px" }}>
-          <div class="owl-carousel owl-theme">
+          <OwlCarousel items={6} dots={false} class="owl-carousel owl-theme">
             <div class="home-demo__item">
               <img src={bmw} />
             </div>
@@ -87,7 +87,7 @@ const Clients = () => {
             <div class="home-demo__item">
               <img src={carrefour} />
             </div>
-          </div>
+          </OwlCarousel>
         </div>
       </div>
     </div>
