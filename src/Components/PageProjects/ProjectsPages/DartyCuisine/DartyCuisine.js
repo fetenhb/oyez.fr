@@ -5,6 +5,10 @@ import SectionOne from "./DartyCuisineComponents/SectionOne";
 import ProjetsInteressee from "../ProjetsInteressee";
 import Projets from "./DartyCuisineComponents/Projets";
 import ProjetsFooter from "../ProjetsFooter";
+import SlideImage from "./DartyCuisineComponents/SlideImage";
+import Gallery from "./DartyCuisineComponents/Gallery";
+import SectionTwo from "./DartyCuisineComponents/SectionTwo";
+import { EspaceVide } from "../ProjectsStyle";
 
 const DartyCuisine = () => {
   return (
@@ -12,6 +16,10 @@ const DartyCuisine = () => {
       <ProjectsNavbar />
       <DartyCuisineHeader />
       <SectionOne />
+      <SlideImage />
+      <SectionTwo />
+      <Gallery />
+      <EspaceVide />
       <ProjetsInteressee />
       <Projets />
       <ProjetsFooter />

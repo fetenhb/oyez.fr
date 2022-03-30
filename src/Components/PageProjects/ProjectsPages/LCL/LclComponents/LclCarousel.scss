@@ -128,9 +128,12 @@
 }
 .owl-carousel .owl-nav {
   margin-top: 50px !important;
-  max-width: 800px;
+  max-width: 900px;
   margin: auto;
 }
 .owl-carousel .owl-item img {
   width: 100%;
+}
+.owl-carousel {
+  padding-bottom: 50px !important;
 }

@@ -1,0 +1,71 @@
+.percentage {
+  padding: 20px 0;
+  opacity: 0;
+}
+
+.animation-progress {
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+}
+
+.animation-bar {
+  height: 4px;
+  width: 0;
+  background: #000;
+  border-radius: 10px;
+  position: relative;
+  -webkit-transition: all 0.9s ease-out;
+  transition: all 0.9s ease-out;
+}
+
+.show {
+  opacity: 1;
+}
+.come-in:nth-child(odd) {
+  animation-duration: 0.6s; /* So they look staggered */
+}
+
+@keyframes come-in {
+  to {
+    transform: translateY(0px);
+  }
+}
+
+.p96 {
+  width: 96%;
+}
+.p25 {
+  width: 25%;
+}
+.p36 {
+  width: 36%;
+}
+.p68 {
+  width: 68%;
+}
+.p72 {
+  width: 72%;
+}
+.p62 {
+  width: 62%;
+}
+.prog-label {
+  display: flex;
+  justify-content: space-between;
+  .label {
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #777;
+  }
+  .percent {
+    right: -0px;
+    top: -25px;
+    opacity: 0;
+    color: #777;
+    line-height: 12px;
+    font-size: 12px;
+
+    font-weight: 400;
+  }
+}

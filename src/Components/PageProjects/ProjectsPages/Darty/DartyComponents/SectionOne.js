@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Paragraph, SectionTitle } from "../../ProjectsStyle";
+import Counter from "./Counter";
 
 const SectionOne = () => {
   return (
@@ -15,6 +16,7 @@ const SectionOne = () => {
         omnicanaux avec un parcours sans couture et qui unifie magasins et site
         e-commerce en temps réel.
       </Paragraph>
+      <Counter />
       <SectionTitle>
         <strong> Un parcours client unifié</strong>
       </SectionTitle>

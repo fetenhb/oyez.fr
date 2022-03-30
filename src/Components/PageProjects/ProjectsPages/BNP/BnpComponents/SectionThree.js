@@ -3,7 +3,7 @@ import { Container, MiniParagraph, SubTitle } from "../../ProjectsStyle";
 
 const SectionThree = () => {
   return (
-    <Container>
+    <div className="container">
       <strong>
         {" "}
         <SubTitle>Un assistant pour personnaliser l’accueil</SubTitle>
@@ -18,7 +18,7 @@ const SectionThree = () => {
         pour mieux répondre à ses besoins et déclencher des opportunités
         commerciales.
       </MiniParagraph>
-    </Container>
+    </div>
   );
 };
 

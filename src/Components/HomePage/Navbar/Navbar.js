@@ -1,11 +1,10 @@
 import React, { useState, Fragment } from "react";
-import styled from "styled-components";
 
 import "./Navbar.scss";
 import "../../../App.css";
 import logo from "../../../Images/logo-oyez.gif";
 import logoWhite from "../../../Images/logo_oyez_white2.png";
-import $ from "jquery";
+
 import { Link } from "react-router-dom";
 
 const Navbar = () => {

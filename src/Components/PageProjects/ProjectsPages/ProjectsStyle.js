@@ -45,7 +45,7 @@ export const MiniParagraph = styled.div`
   color: #000000;
   font-size: 18px;
   font-family: "Montserrat light";
-  margin-bottom: 50px;
+  margin-bottom: 15px;
   line-height: 25px;
 `;
 export const Paragraph = styled.div`
@@ -105,7 +105,7 @@ export const InfinitiImg = styled.div`
   height: 600px;
 `;
 export const Container = styled.div`
-  max-width: 870px;
+  max-width: 900px;
   margin: 0 auto;
 `;
 export const Projet = styled.div`
@@ -133,3 +133,27 @@ export const BackColumn = styled.div`
 export const EspaceVide = styled.div`
   height: 100px;
 `;
+export const Lien = styled.a`
+  color: rgb(0, 0, 0);
+  outline: 0px;
+  font-weight: 400 !important;
+  font-family: "Circular Std" !important;
+`;
+export const Subject = styled.div`
+  margin-top: 30px;
+  margin-bottom: 80px;
+  text-align: center;
+  letter-spacing: 3px;
+  color: #999;
+  text-transform: uppercase;
+  font-family: "Montserrat light";
+  color: #000000;
+  font-size: 18px;
+`;
+// export const Counters = styled.div`
+//   line-height: 48px;
+//   margin-bottom: 5px;
+//   color: #000;
+//   font-size: 48px;
+//   text-align: center;
+// `;

@@ -6,6 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <link
+      href="//db.onlinewebfonts.com/c/9475d6a0b79c164f9f605673714e75d9?family=Circular+Std"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="//db.onlinewebfonts.com/c/860c3ec7bbc5da3e97233ccecafe512e?family=Circular+Thin"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
     />
@@ -17,8 +27,17 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"
+      type="text/javascript"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/prettyPhoto/3.1.6/css/prettyPhoto.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prettyPhoto/3.1.6/js/jquery.prettyPhoto.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/43033/owl.carousel.min.js"></script>
     <meta
       name="description"
@@ -43,7 +62,6 @@
     <title>React App</title>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--
       This HTML file is a template.
@@ -55,7 +73,23 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-    <script>
+    <script type="text/javascript" charset="utf-8">
+      $(document).ready(function () {
+        $("area[rel^='prettyPhoto']").prettyPhoto();
+
+        $(".gallery:first a[rel^='prettyPhoto']").prettyPhoto({
+          animation_speed: "normal",
+          theme: "pp_default",
+          slideshow: 3000,
+          autoplay_slideshow: false,
+        });
+      });
+    </script>
+    <!-- END Google Maps Code -->
+
+    <!-- BuySellAds.com Ad Code -->
+
+    <script type="text/javascript">
       $(function () {
         // Owl Carousel
         var owl = $(".owl-carousel");
@@ -143,6 +177,129 @@
       firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
       // counter
+
+      // Checks if any particular element is in viewport
+      $.fn.isInViewport = function () {
+        var elementTop = $(this).offset().top;
+        var elementBottom = elementTop + $(this).outerHeight();
+        var viewportTop = $(window).scrollTop();
+        var viewportBottom = viewportTop + $(window).height();
+        return elementTop < viewportBottom;
+      };
+
+      // Animate numbers when scrolled into view
+      $(window).scroll(function () {
+        $(" .counter ").each((i, el) => {
+          var $counter = $(el);
+          if (!$counter.isInViewport() || $counter.data("animation-started"))
+            return;
+
+          $counter
+            .data("animation-started", true)
+            .prop("Counter", 0)
+            .animate(
+              {
+                Counter: $counter.text(),
+              },
+              {
+                duration: 3000,
+                easing: "swing",
+                step: function (now) {
+                  $counter.text(Math.ceil(now));
+                },
+              }
+            );
+        });
+      });
+
+      //Progress bar animations
+
+      $(document).scroll(function () {
+        var Animation = function (animationBar, percentage) {
+          this.animationBar = animationBar;
+          this.percentage = percentage;
+          this.animationArray = null;
+          this.animationOffset = null;
+          this.labelArray = null;
+          this.percentageArray = null;
+          this.index = 0;
+
+          this.initialize();
+        };
+
+        Animation.prototype.initialize = function () {
+          this.animationArray = document.getElementsByClassName(
+            this.percentage
+          );
+
+          if (this.animationOffset === null) this.animationOffset = [];
+
+          if (this.labelArray === null) this.labelArray = [];
+
+          if (this.percentageArray === null) this.percentageArray = [];
+
+          this.setUpElements();
+        };
+
+        Animation.prototype.setUpElements = function () {
+          for (var i = 0; i < this.animationArray.length; i++) {
+            var elem = this.animationArray[i],
+              offset =
+                elem.offsetTop +
+                document.getElementsByClassName(this.percentage)[0]
+                  .clientHeight,
+              percentage = $(this.animationArray[i]).data(this.percentage);
+
+            this.animationOffset.push(offset);
+            this.percentageArray.push(percentage);
+
+            $(this.animationArray[i])
+              .find(".percent")
+              .html(percentage + "%")
+              .animate(
+                {
+                  opacity: 1,
+                },
+                1400
+              );
+          }
+
+          this.attachListeners();
+        };
+
+        Animation.prototype.attachListeners = function () {
+          $(window).on("scroll", this.onWindowScroll.bind(this));
+        };
+
+        Animation.prototype.onWindowScroll = function () {
+          for (var i = 0; i < this.animationArray.length; i++) {
+            if (
+              window.pageYOffset >=
+              this.animationOffset[this.index] - window.innerHeight
+            ) {
+              this.showElement();
+              this.index++;
+            } else return;
+          }
+        };
+
+        Animation.prototype.showElement = function () {
+          var element = document.getElementsByClassName(this.percentage)[
+            this.index
+          ];
+          element.className += " show";
+          this.animateBar(element, this.percentageArray[this.index]);
+        };
+
+        Animation.prototype.animateBar = function (element, width) {
+          var $element = $(element),
+            className = " p" + width;
+
+          $element.find(this.animationBar).addClass(className);
+        };
+
+        new Animation(".animation-bar", "percentage");
+      });
     </script>
   </body>
 </html>

@@ -1,0 +1,31 @@
+.grid-wrapper {
+  --auto-grid-min-size: 16rem;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(var(--auto-grid-min-size), 1fr)
+  );
+  margin: 0;
+  padding: 0;
+}
+.grid-wrapper li {
+  color: #ffffff;
+  font-size: 24px;
+  list-style-type: none;
+}
+.main-container {
+  margin: 0 auto;
+  max-width: 1270px;
+  padding: 2rem 1rem;
+}
+.grid-wrapper li img {
+  width: 100%;
+  height: 100%;
+}
+.pp_social {
+  display: none;
+}
+div.pp_default .pp_description {
+  font-weight: 400;
+}

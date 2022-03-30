@@ -34,14 +34,9 @@ body {
   color: #fff;
   text-shadow: none;
 }
-
-.counters {
-  color: #000;
-  padding: 40px 20px;
-  border-top: 3px lightskyblue solid;
-}
-
-.counters .counter {
-  font-size: 45px;
-  margin: 10px 0;
+.counter {
+  line-height: 48px;
+  font-size: 48px;
+  text-align: center;
+  font-family: "Manrope";
 }
