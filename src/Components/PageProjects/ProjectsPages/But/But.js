@@ -7,6 +7,8 @@ import tabletBut from "../../../../Images/tablet-BUT.jpg";
 import ProjetsInteressee from "../ProjetsInteressee.js";
 import Projets from "./ButComponents/Projets.js";
 import ProjetsFooter from "../ProjetsFooter.js";
+import Counter from "./ButComponents/Counter.js";
+import ButCarousel from "./ButComponents/ButCarousel.js";
 
 const But = () => {
   return (
@@ -15,7 +17,9 @@ const But = () => {
       <ButHeader />
       <SectionOne />
       <img src={tabletBut} style={{ width: "100%" }} />
-      <img src={but01} style={{ width: "100%" }} />
+      <img src={but01} style={{ width: "100%", marginBottom: "100px" }} />
+      <ButCarousel />
+      <Counter />
       <ProjetsInteressee />
       <Projets />
       <ProjetsFooter />

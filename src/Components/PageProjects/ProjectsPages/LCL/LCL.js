@@ -10,6 +10,7 @@ import SectionTwo from "./LclComponents/SectionTwo.js";
 import lclParallax from "../../../../Images/lcl-parallax.jpg";
 import SectionThree from "./LclComponents/SectionThree.js";
 import lcl02 from "../../../../Images/lcl-02.jpg";
+import Counter from "./LclComponents/Counter.js";
 
 const LCL = () => {
   return (
@@ -23,6 +24,7 @@ const LCL = () => {
       <img src={lclParallax} style={{ width: "100%", height: "600px" }} />
       <SectionThree />
       <img src={lcl02} style={{ width: "100%" }} />
+      <Counter />
       <ProjetsInteressee />
       <Projets />
       <ProjetsFooter />

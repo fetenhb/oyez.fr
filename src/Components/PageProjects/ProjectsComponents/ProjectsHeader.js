@@ -3,10 +3,10 @@ import "./ProjectsContent.scss";
 
 const ProjectsHeader = () => {
   return (
-    <div style={{ height: "640px" }}>
+    <div>
       {/* <iframe
         id="mbYTP_playmovie"
-        class="playerBox"
+        class="playerBox"npm 
         frameBorder={0}
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
@@ -19,16 +19,15 @@ const ProjectsHeader = () => {
         Play Me
       </button> */}
 
-      <iframe
-        id="video"
-        src="https://www.youtube.com/embed/XjxDfh_h8is?enablejsapi=1&html5=1&mute=1&modestbranding=1&controls=0&showinfo=0&rel=0&enablejsapi=1&version=3&playerapiid=mbYTP_bgndVideo&allowfullscreen=true&wmode=transparent&iv_load_policy=3&html5=1&widgetid=2"
-        class="playerBox"
-        frameBorder={0}
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowFullScreen
-        title="YouTube video player"
-        className="vid"
-      ></iframe>
+      <div class="video-background">
+        <div class="video-foreground">
+          <iframe
+            src="https://www.youtube.com/embed/XjxDfh_h8is?playlist=XjxDfh_h8is&modestbranding=1&controls=0&showinfo=0&rel=0&enablejsapi=1&version=3&showinfo=0&rel=0&autoplay=1&loop=1&mute=1&showinfo=0"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
       {/* 
       <svg class="defs">
         <defs>

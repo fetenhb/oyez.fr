@@ -9,6 +9,7 @@ import boucheron03 from "../../../../Images/boucheron-03.jpg";
 import ProjetsInteressee from "../ProjetsInteressee";
 import Projets from "./BoucheronComponents/Projets";
 import ProjetsFooter from "../ProjetsFooter";
+import Counter from "./BoucheronComponents/Counter";
 
 const Boucheron = () => {
   return (
@@ -20,6 +21,7 @@ const Boucheron = () => {
       <SectionTwo />
       <img src={boucheron02} style={{ width: "100%" }} />
       <img src={boucheron03} style={{ width: "100%" }} />
+      <Counter />
       <ProjetsInteressee />
       <Projets />
       <ProjetsFooter />

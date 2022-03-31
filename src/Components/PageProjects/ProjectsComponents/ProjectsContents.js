@@ -19,13 +19,13 @@ import "./ProjectsContent.scss";
 import { Link } from "react-router-dom";
 const ProjectsContents = () => {
   return (
-    <div style={{ marginLeft: "15px", marginRight: "15px", height: "3244px" }}>
+    <div style={{ marginLeft: "15px", marginRight: "15px", height: "2700px" }}>
       <Link to="/projets-groupe-oyez/carrefour">
         <div
           className="link "
           style={{
             left: "0px",
-            top: "0px",
+            top: "px",
             position: "absolute",
             width: "500px",
             height: "649px",

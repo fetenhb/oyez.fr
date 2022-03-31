@@ -26,6 +26,17 @@ const Progress = () => {
           <div class="animation-bar"></div>
         </div>
       </div>
+      <div class="percentage " data-percentage="92">
+        <div class="prog-label" style={{ width: "92%" }}>
+          <span className="label">
+            Des vendeurs estiment les clients davantage satisfaits
+          </span>
+          <span className="percent"></span>
+        </div>
+        <div class="animation-progress">
+          <div class="animation-bar"></div>
+        </div>
+      </div>
     </div>
   );
 };

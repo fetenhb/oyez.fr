@@ -6,9 +6,9 @@ import ProjectsHeader from "./ProjectsComponents/ProjectsHeader";
 const PageProjects = () => {
   return (
     <div>
-      <ProjectsContents />
+      <ProjectsHeader />
+      {/* <ProjectsContents /> */}
       <FooterAdresse />
-      {/* <ProjectsHeader /> */}
     </div>
   );
 };

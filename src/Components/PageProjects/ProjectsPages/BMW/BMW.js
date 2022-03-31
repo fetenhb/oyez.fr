@@ -10,6 +10,9 @@ import Projets from "./BmwComponents/Projets.js";
 import ProjetsFooter from "../ProjetsFooter.js";
 import ProjetsInteressee from "../ProjetsInteressee.js";
 import bmwVitrine from "../../../../Images/bmw-vitrine.jpg";
+import Counter from "./BmwComponents/Counter.js";
+import SectionFour from "./BmwComponents/SectionFour.js";
+import { EspaceVide } from "../ProjectsStyle.js";
 
 const BMW = () => {
   return (
@@ -19,10 +22,12 @@ const BMW = () => {
       <SectionOne />
       <img src={bmw01} style={{ width: "100%" }} />
       <SectionTwo />
+      <Counter />
       <img src={bmw03} style={{ width: "100%" }} />
       <SectionThree />
+      <SectionFour />
       <img src={bmwVitrine} style={{ width: "100%" }} />
-
+      <EspaceVide />
       <ProjetsInteressee />
       <Projets />
       <ProjetsFooter />
