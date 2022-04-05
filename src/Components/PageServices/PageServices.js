@@ -2,6 +2,7 @@ import React from "react";
 import FooterAdresse from "../HomePage/Footer/FooterAdresse";
 import Navbar from "../HomePage/Navbar/Navbar";
 import { Separation } from "../HomePage/Separation/Separation";
+import ScrollToTop from "../ScrollToTop";
 import Consulting from "./ServicesComponents/Consulting";
 import DigitalCustomer from "./ServicesComponents/DigitalCustomer";
 import Engineering from "./ServicesComponents/Engineering";
@@ -10,6 +11,7 @@ import ServicesHeader from "./ServicesComponents/ServicesHeader";
 const PageServices = () => {
   return (
     <div>
+      <ScrollToTop />
       <Navbar />
       <ServicesHeader />
       <Engineering />

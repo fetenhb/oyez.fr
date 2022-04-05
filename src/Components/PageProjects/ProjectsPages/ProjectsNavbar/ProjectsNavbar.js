@@ -28,12 +28,11 @@ const Navbar = () => {
   window.addEventListener("scroll", changeNavbarColor, changeLogo);
   return (
     <nav className={colorChange ? "navbar colorChange" : "navbar"}>
-      <div className="logo">
-        <a href="#">
-          {" "}
-          {logoChange ? <img src={logo} /> : <img src={logoWhite} />}
-        </a>
-      </div>
+      <Link to="/">
+        <div className="logo">
+          <a> {logoChange ? <img src={logo} /> : <img src={logoWhite} />}</a>
+        </div>
+      </Link>
       <div>
         <input type="checkbox" id="burger-toggle" />
         <label for="burger-toggle" class="burger-menu">

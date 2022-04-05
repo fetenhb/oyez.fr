@@ -29,6 +29,7 @@ const Card = (props) => {
             ))}
           </div>
           <Link to="/uni-retail-marketing-data-expertise-groupe-oyez">
+            {" "}
             <ButtonPlusBlack />
           </Link>
           <Separation theme="#d43a75" />{" "}

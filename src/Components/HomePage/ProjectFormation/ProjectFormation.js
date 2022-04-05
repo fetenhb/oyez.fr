@@ -24,6 +24,7 @@ const ProjectFormation = (props) => {
       color: white;
       font-size: 20px;
       margin-bottom: 10px;
+      font-weight: 400;
       font-family: Manrope !important;
     }
   `;

@@ -28,8 +28,15 @@ const Clients = () => {
       <div className="container">
         <h1 style={{ padding: "0 0 50px 0" }}>Clients</h1>
 
-        <div class="home-demo" style={{ margin: "30px" }}>
-          <OwlCarousel items={6} dots={false} class="owl-carousel owl-theme">
+        <div class="home-demo">
+          <OwlCarousel
+            items={6}
+            autoPlay={true}
+            dots={false}
+            loop={true}
+            class="owl-carousel owl-theme"
+            style={{ paddingBottom: "0 !important" }}
+          >
             <div class="home-demo__item">
               <img src={bmw} />
             </div>

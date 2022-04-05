@@ -7,12 +7,10 @@
 //     font-weight: 300;
 //   }
 .home-demo {
-  height: 200px;
   &__item {
     width: 45px;
     opacity: 0.5;
     cursor: grab;
-    margin-bottom: 100px;
   }
   &__item:hover {
     opacity: 1;
