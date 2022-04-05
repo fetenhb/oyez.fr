@@ -31,45 +31,28 @@ const Clients = () => {
         <div class="home-demo">
           <OwlCarousel
             items={6}
-            autoPlay={true}
+            autoplay={true}
+            autoPlayTimeout={1000}
             dots={false}
             loop={true}
             class="owl-carousel owl-theme"
             style={{ paddingBottom: "0 !important" }}
           >
             <div class="home-demo__item">
-              <img src={bmw} />
-            </div>
-            <div class="home-demo__item">
-              <img src={boucheron} />
-            </div>
-            <div class="home-demo__item">
-              <img src={Infiniti} />
-            </div>
-            <div class="home-demo__item">
-              <img src={chalhoub} />
-            </div>
-            <div class="home-demo__item">
-              <img src={GroupeBPCE} />
-            </div>
-            <div class="home-demo__item">
-              <img src={coca} />
-            </div>
-            <div class="home-demo__item">
               <img src={Lcl} />
-            </div>
+            </div>{" "}
             <div class="home-demo__item">
               <img src={but} />
-            </div>
+            </div>{" "}
             <div class="home-demo__item">
               <img src={RENAULT} />
-            </div>
+            </div>{" "}
             <div class="home-demo__item">
               <img src={monoprix} />
-            </div>
+            </div>{" "}
             <div class="home-demo__item">
               <img src={Galeries} />
-            </div>
+            </div>{" "}
             <div class="home-demo__item">
               <img src={dominos} />
             </div>
@@ -93,6 +76,24 @@ const Clients = () => {
             </div>
             <div class="home-demo__item">
               <img src={carrefour} />
+            </div>{" "}
+            <div class="home-demo__item">
+              <img src={bmw} />
+            </div>
+            <div class="home-demo__item">
+              <img src={boucheron} />
+            </div>
+            <div class="home-demo__item">
+              <img src={Infiniti} />
+            </div>
+            <div class="home-demo__item">
+              <img src={chalhoub} />
+            </div>
+            <div class="home-demo__item">
+              <img src={GroupeBPCE} />
+            </div>
+            <div class="home-demo__item">
+              <img src={coca} />
             </div>
           </OwlCarousel>
         </div>

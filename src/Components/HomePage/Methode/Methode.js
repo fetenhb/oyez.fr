@@ -8,13 +8,21 @@ const MethodeStyle = styled.div`
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  padding-bottom: 50px;
+  padding-top: 50px;
   width: 100%;
   height: auto;
-  h1,
-  p {
+  h1 {
     font-family: "Montserrat light";
     margin-bottom: 60px;
     width: 420px;
+  }
+  p {
+    font-family: "Montserrat light";
+    margin-bottom: 50px;
+    width: 420px;
+    font-weight: 400;
+    color: black;
   }
 `;
 const Methode = () => {

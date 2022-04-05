@@ -11,11 +11,13 @@ import lclParallax from "../../../../Images/lcl-parallax.jpg";
 import SectionThree from "./LclComponents/SectionThree.js";
 import lcl02 from "../../../../Images/lcl-02.jpg";
 import Counter from "./LclComponents/Counter.js";
+import ScrollToTop from "../../../ScrollToTop.js";
 
 const LCL = () => {
   return (
     <div>
       {" "}
+      <ScrollToTop />
       <ProjectsNavbar />
       <LclHeader />
       <SectionOne />

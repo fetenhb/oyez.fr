@@ -11,7 +11,7 @@ const Counter = () => {
       <Row>
         <Column>
           {" "}
-          <div class="counter">8</div>
+          <div class="counter">80</div>
           <Subject>PAYS </Subject>
         </Column>
         <ColumnWithBorder>

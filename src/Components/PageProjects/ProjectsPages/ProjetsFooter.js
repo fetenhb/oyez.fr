@@ -13,10 +13,34 @@ const ProjetsFooter = () => {
           <a class="top" href="#"></a>
 
           <ul>
-            <li> Facebook</li>
-            <li> Twitter</li>
-            <li> linkedin</li>
-            <li> Instagram</li>
+            <li>
+              {" "}
+              <a href="https://www.facebook.com/groupeOyez/" target="_blank">
+                {" "}
+                Facebook{" "}
+              </a>{" "}
+            </li>
+            <li>
+              {" "}
+              <a href="https://twitter.com/groupeoyez" target="_blank">
+                {" "}
+                Twitter{" "}
+              </a>
+            </li>
+            <li>
+              {" "}
+              <a href="https://www.linkedin.com/company/oyez/" target="_blank">
+                {" "}
+                linkedin
+              </a>
+            </li>
+            <li>
+              {" "}
+              <a href="https://www.instagram.com/oyez.tunisia/" target="_blank">
+                {" "}
+                Instagram
+              </a>
+            </li>
           </ul>
         </div>
       </div>

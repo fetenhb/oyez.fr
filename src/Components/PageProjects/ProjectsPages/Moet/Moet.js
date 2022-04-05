@@ -6,10 +6,12 @@ import moett from "../../../../Images/MH.jpg";
 import ProjetsInteressee from "../ProjetsInteressee";
 import Projets from "./MoetComponents/Projets";
 import ProjetsFooter from "../ProjetsFooter";
+import ScrollToTop from "../../../ScrollToTop";
 
 const Moet = () => {
   return (
     <div>
+      <ScrollToTop />
       <ProjectsNavbar />
       <MoetHeader />
       <SectionOne />

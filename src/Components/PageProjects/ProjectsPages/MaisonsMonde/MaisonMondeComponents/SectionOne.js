@@ -1,9 +1,9 @@
 import React from "react";
-import { SectionOneStyle } from "../../ProjectsStyle";
+import { Container, SectionOneStyle } from "../../ProjectsStyle";
 
 const SectionOne = () => {
   return (
-    <div className="container">
+    <Container>
       <SectionOneStyle>
         <h5>
           <strong> Notre vision</strong>
@@ -30,7 +30,7 @@ const SectionOne = () => {
           </li>
         </ul>
       </SectionOneStyle>
-    </div>
+    </Container>
   );
 };
 

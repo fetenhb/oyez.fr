@@ -3,7 +3,7 @@ import "./ProjectsContent.scss";
 import vid from "../../../Images/OYEZ.mp4";
 const ProjectsHeader = () => {
   const video = document.getElementById("background-video");
-  const btn = document.getElementById("btnVideo");
+
   const el = document.querySelector(".overlay");
   const [isPlay, setIsPlay] = useState(false);
 
@@ -45,13 +45,6 @@ const ProjectsHeader = () => {
           </div>
         </div>
       </div>{" "}
-      {/* <div class="content">
-        <h1>BIEN PLUS QU'UNE RIVIÈRE</h1>
-        <h2>Une source de vie</h2>
-        <button id="btnVideo" onClick={playAndPause}>
-          Pause II
-        </button>
-      </div> */}
     </div>
   );
 };

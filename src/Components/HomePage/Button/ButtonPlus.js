@@ -5,14 +5,14 @@ export const Button = styled.button`
   color: ${(props) => props.theme.wh};
   font-family: "Montserrat", sans-serif;
   font-size: 10px;
-  font-weight: 400;
+
   letter-spacing: 2px;
   text-transform: uppercase;
   padding: 20px 40px;
   line-height: 12px;
   cursor: pointer;
   border: none;
-  text-align: center;
+  margin-left: 0 !important;
   background-color: ${(props) => props.theme.bl};
   align-self: flex-start;
   border-radius: 50px;
@@ -32,7 +32,7 @@ const theme = {
 const ButtonPlus = () => {
   return (
     <Button theme={theme} style={{ cursor: "pointer" }}>
-      En savoir +
+      <strong> En savoir +</strong>
     </Button>
   );
 };

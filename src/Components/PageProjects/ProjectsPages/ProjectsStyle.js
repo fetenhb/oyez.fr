@@ -33,6 +33,7 @@ export const SectionOneStyle = styled.div`
     margin: 0;
   }
   p {
+    font-weight: 400;
     color: #010101;
     font-size: 24px;
     line-height: 30pt;
@@ -40,10 +41,14 @@ export const SectionOneStyle = styled.div`
     margin-top: 20px;
     margin-bottom: 20px;
   }
+  ul {
+    padding-left: 20px;
+  }
 `;
 export const MiniParagraph = styled.div`
   color: #000000;
   font-size: 18px;
+  margin-top: 20px;
   font-family: "Montserrat light";
   margin-bottom: 15px;
   line-height: 25px;
@@ -53,8 +58,14 @@ export const Paragraph = styled.div`
   font-size: 24px;
   line-height: 30pt;
   font-family: "Montserrat light";
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  a {
+    text-decoration: none;
+    font-weight: 400;
+    color: black;
+    font-family: "Circular Std";
+  }
 `;
 export const SectionTitle = styled.div`
   color: #000000;
@@ -66,6 +77,7 @@ export const MiniTitle = styled.div`
   font-size: 22px;
   margin-bottom: 20px;
   line-height: 25px;
+  margin-top: 50px;
 `;
 export const SubTitle = styled.div`
   color: #000000;

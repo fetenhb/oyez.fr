@@ -9,10 +9,12 @@ import ProjetsInteressee from "../ProjetsInteressee.js";
 import Projets from "./BnpComponents/Projets.js";
 import ProjetsFooter from "../ProjetsFooter.js";
 import Counter from "./BnpComponents/Counter.js";
+import ScrollToTop from "../../../ScrollToTop.js";
 
 const BNP = () => {
   return (
     <div>
+      <ScrollToTop />
       <ProjectsNavbar />
       <BnpHeader />
       <SectionOne />

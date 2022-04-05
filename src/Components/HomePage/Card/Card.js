@@ -48,7 +48,12 @@ const Card = (props) => {
                       {exp.title}
                       <br />
                     </h4>
-                    <p className="card__info">{exp.description}</p>
+                    <p
+                      className="card__info"
+                      style={{ fontWeight: "400", color: "black" }}
+                    >
+                      {exp.description}
+                    </p>
                   </div>
                 </div>
               </>
@@ -75,13 +80,18 @@ const Card = (props) => {
                       <br />
                       {exp.title.split(" ")[1]}
                     </h4>
-                    <p className="card__info">{exp.description}</p>
+                    <p className="card__info" style={{ fontSize: "16px" }}>
+                      {exp.description}
+                    </p>
                   </div>
                 </div>
               </>
             ))}
           </div>
-          <ButtonPlusBlack />
+          <Link to="/technologie-groupe-oyez-2">
+            {" "}
+            <ButtonPlusBlack />
+          </Link>
           <Separation theme="#0070c7" />{" "}
         </div>
       )}

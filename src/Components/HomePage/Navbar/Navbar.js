@@ -113,27 +113,33 @@ const Navbar = () => {
             </div>
             <div className="menu-footer-social">
               <ul className="social-media">
-                <a>
+                <a href="https://www.facebook.com/groupeOyez/" target="_blank">
                   {" "}
                   <li>
                     <i class="fa fa-facebook" aria-hidden="true"></i>
                   </li>{" "}
                 </a>
-                <a>
+                <a href="https://twitter.com/groupeoyez" target="_blank">
                   {" "}
                   <li>
                     {" "}
                     <i class="fa fa-twitter" aria-hidden="true"></i>
                   </li>{" "}
                 </a>
-                <a>
+                <a
+                  href="https://www.linkedin.com/company/oyez/"
+                  target="_blank"
+                >
                   {" "}
                   <li>
                     {" "}
                     <i class="fa fa-linkedin" aria-hidden="true"></i>
                   </li>{" "}
                 </a>
-                <a>
+                <a
+                  href="https://www.instagram.com/oyez.tunisia/"
+                  target="_blank"
+                >
                   {" "}
                   <li>
                     {" "}

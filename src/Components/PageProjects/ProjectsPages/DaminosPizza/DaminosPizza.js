@@ -9,10 +9,12 @@ import { PizzaImg } from "../ProjectsStyle";
 import ProjetsInteressee from "../ProjetsInteressee";
 import Projets from "./DaminosPizzaComponents/Projets";
 import ProjetsFooter from "../ProjetsFooter";
+import ScrollToTop from "../../../ScrollToTop";
 
 const DaminosPizza = () => {
   return (
     <div>
+      <ScrollToTop />
       <ProjectsNavbar />
       <DaminosPizzaHeader />
       <SectionOne />

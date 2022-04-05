@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;700;800&display=swap");
 .container {
-  width: 900px;
+  max-width: 870px;
   margin: 0 auto;
   @media screen and (max-width: 750px), screen and (max-width: 910px) {
     width: auto;
@@ -44,5 +44,5 @@
   }
 }
 .title {
-  margin: 65px 0 30px 0 !important;
+  margin: 00px 0 30px 0 !important;
 }

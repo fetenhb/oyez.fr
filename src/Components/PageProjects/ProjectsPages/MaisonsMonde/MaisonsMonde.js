@@ -8,10 +8,12 @@ import MDM02 from "../../../../Images/MDM-02.jpg";
 import ProjetsInteressee from "../ProjetsInteressee.js";
 import Projets from "./MaisonMondeComponents/Projets.js";
 import ProjetsFooter from "../ProjetsFooter.js";
+import ScrollToTop from "../../../ScrollToTop.js";
 
 const MaisonsMonde = () => {
   return (
     <div>
+      <ScrollToTop />
       <ProjectsNavbar />
       <MaisonsMondeHeader />
       <SectionOne />

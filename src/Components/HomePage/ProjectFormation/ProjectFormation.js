@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import realisations from "../../../Images/realisations.jpg";
 import tunis from "../../../Images/tunis.jpg";
@@ -14,8 +15,8 @@ const ProjectFormation = (props) => {
     background-position: center center;
     background-repeat: no-repeat;
     height: 100%;
-    margin-top: 50px;
-    margin-bottom: 100px;
+
+    margin-bottom: 80px;
     padding-top: 30px;
     padding-bottom: 30px;
     color: white;
@@ -41,6 +42,13 @@ const ProjectFormation = (props) => {
                 Magasins connectés, e-commerce, marketing expérientiel,
                 marketing conversationnel…
               </p>
+              <Link to="/projets-groupe-oyez">
+                {" "}
+                <Button theme={{ wh: "black", bl: "#ffffff" }}>
+                  {" "}
+                  En savoir +
+                </Button>{" "}
+              </Link>
             </>
           ) : (
             <>
@@ -50,10 +58,14 @@ const ProjectFormation = (props) => {
                 Vous cherchez à constituer vos équipes développeurs pour vos
                 projets ? Les candidats se font rares ?
               </p>
+              <Link to="/formation-regie-tunis-groupe-oyez">
+                <Button theme={{ wh: "black", bl: "#ffffff" }}>
+                  {" "}
+                  En savoir +
+                </Button>{" "}
+              </Link>
             </>
           )}
-
-          <Button theme={{ wh: "black", bl: "#ffffff" }}> En savoir +</Button>
         </div>
       </Project>
     </div>

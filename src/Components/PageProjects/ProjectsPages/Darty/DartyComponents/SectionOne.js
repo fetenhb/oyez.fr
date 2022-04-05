@@ -5,7 +5,7 @@ import Counter from "./Counter";
 const SectionOne = () => {
   return (
     <Container>
-      <Paragraph>
+      <Paragraph style={{ marginTop: "50px" }}>
         <strong>
           Premier déploiement en France de tablettes vendeurs augmentés dans le
           retail spécialisé en 2014.{" "}

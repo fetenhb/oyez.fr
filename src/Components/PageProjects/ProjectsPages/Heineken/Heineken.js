@@ -7,10 +7,12 @@ import SectionTwo from "./HeinekenComponents/SectionTwo.js";
 import ProjetsInteressee from "../ProjetsInteressee.js";
 import Projets from "./HeinekenComponents/Projets.js";
 import ProjetsFooter from "../ProjetsFooter.js";
+import ScrollToTop from "../../../ScrollToTop.js";
 
 const Heineken = () => {
   return (
     <div>
+      <ScrollToTop />
       <ProjectsNavbar />
       <HeinekenHeader />
       <SectionOne />

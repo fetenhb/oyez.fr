@@ -1,4 +1,5 @@
 import React, { Fragment } from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import bgHeader from "../../../Images/headerBg.jpg";
 import ButtonPlus from "../../HomePage/Button/ButtonPlus";
@@ -11,6 +12,7 @@ const HeaderStyle = styled.div`
   background-repeat: no-repeat;
   width: 100%;
   height: 641px;
+  margin-bottom: 50px;
 `;
 export const Content = styled.div`
   display: flex;
@@ -72,7 +74,10 @@ const Header = () => {
             <Span theme="#E1AB33">#UNICANAL </Span>
             <Span theme="#D43A75">#OYEZ </Span>
           </p>
-          <ButtonPlus />
+          <Link to="/technologie-groupe-oyez-2" style={{ width: "100%" }}>
+            {" "}
+            <ButtonPlus />
+          </Link>
         </Content>
       </HeaderStyle>
     </Fragment>

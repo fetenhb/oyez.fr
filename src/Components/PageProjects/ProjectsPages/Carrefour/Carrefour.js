@@ -9,10 +9,12 @@ import ProjetsInteressee from "../ProjetsInteressee";
 import Projets from "./CarrefourComponents/Projets";
 import ProjetsFooter from "../ProjetsFooter";
 import Counter from "./CarrefourComponents/Counter";
+import ScrollToTop from "../../../ScrollToTop";
 
 const Carrefour = () => {
   return (
     <div>
+      <ScrollToTop />
       <ProjectsNavbar />
       <CarrefourHeader />
       <SectionOne />

@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router";
 import Home from "./Components/HomePage/Home";
 import PageContact from "./Components/PageContact/PageContact";
 import PageExpertises from "./Components/PageExpertises/PageExpertises";
+import PageFormation from "./Components/PageFormation/PageFormation";
 import PageMedias from "./Components/PageMedias/PageMedias";
 import PageMethode from "./Components/PageMethode/PageMethode";
 import PageProjects from "./Components/PageProjects/PageProjects";
@@ -22,6 +23,7 @@ import Moet from "./Components/PageProjects/ProjectsPages/Moet/Moet";
 import SaintLaurent from "./Components/PageProjects/ProjectsPages/SaintLaurent/SaintLaurent";
 
 import PageServices from "./Components/PageServices/PageServices";
+import PageTechnologies from "./Components/PageTechnologies/PageTechnologies";
 function App() {
   return (
     <Fragment>
@@ -39,7 +41,14 @@ function App() {
         <Route path="/medias" element={<PageMedias />} />
         <Route path="/projets-groupe-oyez" element={<PageProjects />} />
         <Route path="/methode-groupe-oyez" element={<PageMethode />} />
-
+        <Route
+          path="/technologie-groupe-oyez-2"
+          element={<PageTechnologies />}
+        />
+        <Route
+          path="/formation-regie-tunis-groupe-oyez"
+          element={<PageFormation />}
+        />
         <Route path="/contact" element={<PageContact />} />
         <Route path="/projets-groupe-oyez/infiniti" element={<Infiniti />} />
         <Route path="/projets-groupe-oyez/carrefour" element={<Carrefour />} />

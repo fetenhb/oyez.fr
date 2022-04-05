@@ -9,7 +9,7 @@ const Projets = () => {
     <div style={{ display: "flex", height: "500px" }}>
       <ImgColumn className="link ">
         {" "}
-        <Link to="/projets-groupe-oyez/infiniti">
+        <Link to="/projets-groupe-oyez/lcl">
           <BackColumn className="image" imgUrl={lcl}>
             <div className="item">
               <div className="title-container">
@@ -24,7 +24,7 @@ const Projets = () => {
       </ImgColumn>
 
       <ImgColumn className="link " style={{ right: "0" }}>
-        <Link to="/projets-groupe-oyez/maisons-du-monde">
+        <Link to="/projets-groupe-oyez/retail-vendeurs-connectes-commerce-unifie">
           {" "}
           <BackColumn className="image" imgUrl={fnac}>
             <div className="item">

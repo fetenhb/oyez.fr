@@ -8,11 +8,13 @@ import { InfinitiImg } from "../ProjectsStyle";
 import ProjetsInteressee from "../ProjetsInteressee";
 import Projets from "./InfinitiComponents/Projets";
 import ProjetsFooter from "../ProjetsFooter";
+import ScrollToTop from "../../../ScrollToTop";
 
 const Infiniti = () => {
   return (
     <div>
       {" "}
+      <ScrollToTop />
       <ProjectsNavbar />
       <InfinitiHeader />
       <SectionOne />

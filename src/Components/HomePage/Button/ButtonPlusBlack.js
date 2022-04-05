@@ -4,9 +4,9 @@ const ButtonPlusBlack = (theme) => {
   return (
     <Button
       theme={{ wh: "black", bl: "#ffffff" }}
-      style={{ border: "black 2px solid", padding: "18px 38px" }}
+      style={{ border: "black 2.2px solid", padding: "18px 38px" }}
     >
-      En savoir +
+      <strong> En savoir +</strong>
     </Button>
   );
 };

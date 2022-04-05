@@ -1,4 +1,5 @@
 import React from "react";
+import ScrollToTop from "../../../ScrollToTop.js";
 import ProjectsNavbar from "../ProjectsNavbar/ProjectsNavbar.js";
 import ProjetsFooter from "../ProjetsFooter.js";
 import ProjetsInteressee from "../ProjetsInteressee.js";
@@ -13,6 +14,7 @@ import SlideImage from "./DartyComponents/SlideImage.js";
 const Darty = () => {
   return (
     <div>
+      <ScrollToTop />
       <ProjectsNavbar />
       <DartyHeader />
       <SectionOne />

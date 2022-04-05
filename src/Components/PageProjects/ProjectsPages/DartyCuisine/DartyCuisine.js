@@ -9,10 +9,12 @@ import SlideImage from "./DartyCuisineComponents/SlideImage";
 import Gallery from "./DartyCuisineComponents/Gallery";
 import SectionTwo from "./DartyCuisineComponents/SectionTwo";
 import { EspaceVide } from "../ProjectsStyle";
+import ScrollToTop from "../../../ScrollToTop";
 
 const DartyCuisine = () => {
   return (
     <div>
+      <ScrollToTop />
       <ProjectsNavbar />
       <DartyCuisineHeader />
       <SectionOne />

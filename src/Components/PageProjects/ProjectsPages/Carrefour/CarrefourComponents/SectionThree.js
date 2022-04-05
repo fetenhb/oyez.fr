@@ -15,7 +15,7 @@ const SectionThree = () => {
   return (
     <div>
       <figure>
-        <Image>
+        <Image style={{ marginTop: "50px" }}>
           <img src={ensemble} />
         </Image>
       </figure>{" "}

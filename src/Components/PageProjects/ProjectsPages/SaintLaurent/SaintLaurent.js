@@ -7,9 +7,11 @@ import SectionTwo from "./SaintLaurentComponents/SectionTwo.js";
 import ProjetsInteressee from "../ProjetsInteressee.js";
 import Projets from "./SaintLaurentComponents/Projets.js";
 import ProjetsFooter from "../ProjetsFooter.js";
+import ScrollToTop from "../../../ScrollToTop.js";
 const SaintLaurent = () => {
   return (
     <div>
+      <ScrollToTop />
       <ProjectsNavbar />
       <SaintLaurentHeader />
       <SectionOne />

@@ -9,10 +9,12 @@ import Projets from "./ButComponents/Projets.js";
 import ProjetsFooter from "../ProjetsFooter.js";
 import Counter from "./ButComponents/Counter.js";
 import ButCarousel from "./ButComponents/ButCarousel.js";
+import ScrollToTop from "../../../ScrollToTop.js";
 
 const But = () => {
   return (
     <div>
+      <ScrollToTop />
       <ProjectsNavbar />
       <ButHeader />
       <SectionOne />

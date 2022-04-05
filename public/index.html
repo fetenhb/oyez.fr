@@ -16,6 +16,16 @@
       type="text/css"
     />
     <link
+      href="//db.onlinewebfonts.com/c/029177df870cce2b384f0610a6e1f82a?family=Montserrat+Light"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="//db.onlinewebfonts.com/c/5fc6f4fd75e944a52a342ab2c7f100f1?family=Montserrat"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
     />
@@ -74,6 +84,7 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
     <script type="text/javascript" charset="utf-8">
+      //gallery
       $(document).ready(function () {
         $("area[rel^='prettyPhoto']").prettyPhoto();
 
@@ -84,100 +95,8 @@
           autoplay_slideshow: false,
         });
       });
-    </script>
-    <!-- END Google Maps Code -->
 
-    <!-- BuySellAds.com Ad Code -->
-
-    <script type="text/javascript">
-      $(function () {
-        // Owl Carousel
-        var owl = $(".owl-carousel");
-        owl.owlCarousel({
-          stagePadding: 400,
-          loop: true,
-          margin: 50,
-          nav: false,
-          navText: [
-            "<div class='nav-btn prev-slide'> </div><div class='arrow-prev-line'></div>",
-            "<div class='nav-btn next-slide'></div><div class='arrow-next-line'></div>",
-          ],
-
-          items: 1,
-          // lazyLoad: true,
-          nav: true,
-          dots: true,
-          autoplay: true,
-          responsive: {
-            0: {
-              items: 1,
-              stagePadding: 60,
-            },
-            600: {
-              items: 1,
-              stagePadding: 100,
-            },
-            1000: {
-              items: 1,
-              stagePadding: 200,
-            },
-            1200: {
-              items: 1,
-              stagePadding: 250,
-            },
-            1400: {
-              items: 1,
-              stagePadding: 400,
-            },
-            1600: {
-              items: 1,
-              stagePadding: 400,
-            },
-            1800: {
-              items: 1,
-              stagePadding: 400,
-            },
-          },
-        });
-      });
-
-      // https://developers.google.com/youtube/iframe_api_reference
-
-      // global variable for the player
-      // var player;
-
-      // // this function gets called when API is ready to use
-      // function onYouTubePlayerAPIReady() {
-      //   // create the global player from the specific iframe (#video)
-      //   player = new YT.Player("video", {
-      //     events: {
-      //       // call this function when player is ready to use
-      //       onReady: onPlayerReady,
-      //     },
-      //   });
-      // }
-
-      // function onPlayerReady(event) {
-      // bind events
-      //   var playButton = document.getElementById("play-button");
-      //   playButton.addEventListener("click", function () {
-      //     player.playVideo();
-      //     playButton.classList.add("mystyle");
-      //   });
-
-      //   var pauseButton = document.getElementById("pause-button");
-      //   pauseButton.addEventListener("click", function () {
-      //     player.pauseVideo();
-      //   });
-      // }
-
-      // Inject YouTube API script
-      // var tag = document.createElement("script");
-      // tag.src = "//www.youtube.com/player_api";
-      // var firstScriptTag = document.getElementsByTagName("script")[0];
-      // firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-      // counter
+      // counter animations
 
       // Checks if any particular element is in viewport
       $.fn.isInViewport = function () {

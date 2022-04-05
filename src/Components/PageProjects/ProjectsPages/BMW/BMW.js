@@ -13,10 +13,12 @@ import bmwVitrine from "../../../../Images/bmw-vitrine.jpg";
 import Counter from "./BmwComponents/Counter.js";
 import SectionFour from "./BmwComponents/SectionFour.js";
 import { EspaceVide } from "../ProjectsStyle.js";
+import ScrollToTop from "../../../ScrollToTop.js";
 
 const BMW = () => {
   return (
     <div>
+      <ScrollToTop />
       <ProjectsNavbar />
       <BmwHeader />
       <SectionOne />

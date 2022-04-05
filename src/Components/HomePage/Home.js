@@ -8,9 +8,11 @@ import ProjectFormation from "./ProjectFormation/ProjectFormation";
 import Methode from "./Methode/Methode";
 import Partenaires from "./Partenaires/Partenaires";
 import Footer from "./Footer/Footer";
+import ScrollToTop from "../ScrollToTop";
 const Home = () => {
   return (
     <div>
+      <ScrollToTop />
       <Navbar />
       <Header />
       <CardExpertises content={"expertise"} />

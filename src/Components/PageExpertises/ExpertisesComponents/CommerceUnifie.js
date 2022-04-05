@@ -12,7 +12,7 @@ export const Intro = styled.div`
     font-size: 24px;
     @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;700;800&display=swap");
     font-family: "Montserrat light";
-
+    font-weight: 400;
     line-height: 30pt;
   }
 `;
@@ -47,6 +47,7 @@ export const Questions = styled.div`
     font-size: 20px;
     font-family: "Montserrat light";
     margin-top: 20px;
+    font-weight: 400;
   }
 `;
 export const ButtonContact = styled(Button)`
@@ -120,7 +121,7 @@ const CommerceUnifie = (theme) => {
         </Questions>
       </Section>
       <Link to="/contact">
-        <ButtonContact theme={{ wh: "black", bl: "white" }}>
+        <ButtonContact theme={{ wh: "white", bl: "black" }}>
           CONTACTEZ-NOUS
         </ButtonContact>
       </Link>

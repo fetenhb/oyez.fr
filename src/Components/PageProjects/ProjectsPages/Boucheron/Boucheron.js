@@ -10,10 +10,12 @@ import ProjetsInteressee from "../ProjetsInteressee";
 import Projets from "./BoucheronComponents/Projets";
 import ProjetsFooter from "../ProjetsFooter";
 import Counter from "./BoucheronComponents/Counter";
+import ScrollToTop from "../../../ScrollToTop";
 
 const Boucheron = () => {
   return (
     <div>
+      <ScrollToTop />
       <ProjectsNavbar />
       <BoucheronHeader />
       <SectionOne />
