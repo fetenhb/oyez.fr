@@ -2,32 +2,38 @@ import React, { useRef, useState } from "react";
 import "./ProjectsContent.scss";
 import vid from "../../../Images/OYEZ.mp4";
 const ProjectsHeader = () => {
-  const video = document.getElementById("background-video");
-
-  const el = document.querySelector(".overlay");
-  const [isPlay, setIsPlay] = useState(false);
-
+  const backgroundVideo = useRef(null);
+  const overlay = useRef(null);
   let time = 0;
   const playVideo = () => {
-    setIsPlay(true);
-
-    time = video.currentTime;
-    video.currentTime = 0;
-    el.style.visibility = "hidden";
-    video.play();
+    time = backgroundVideo.current.currentTime;
+    backgroundVideo.current.currentTime = 0;
+    overlay.current.style.visibility = "hidden";
+    backgroundVideo.current.play();
   };
   const stopVideo = () => {
-    video.currentTime = time;
-    el.style.visibility = "visible";
-    video.play();
+    backgroundVideo.current.currentTime = time;
+    overlay.current.style.visibility = "visible";
+    backgroundVideo.current.play();
   };
 
   return (
     <div style={{ height: "600px" }}>
-      <video id="background-video" autoPlay loop muted onClick={stopVideo}>
+      <video
+        ref={backgroundVideo}
+        id="background-video"
+        autoPlay
+        loop
+        muted
+        onClick={stopVideo}
+      >
         <source src={vid} type="video/mp4" />
       </video>{" "}
-      <div class="overlay " style={{ backgroundColor: "rgba(0, 0, 0, 0.6)" }}>
+      <div
+        ref={overlay}
+        class="overlay "
+        style={{ backgroundColor: "rgba(0, 0, 0, 0.6)" }}
+      >
         <div class="clapat-caption animated light-content">
           <div class="caption-content center-center">
             <div class="play-icon" onClick={playVideo}>

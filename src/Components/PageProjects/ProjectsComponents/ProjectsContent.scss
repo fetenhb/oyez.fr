@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;700;800&family=Montserrat:ital,wght@0,200;0,300;0,400;1,200&display=swap");
+// project content
 .link .image {
   -webkit-transition: all 0.5s linear;
   transition: all 0.5s linear;
@@ -36,6 +36,7 @@ Link {
   height: 100%;
 }
 .titleProject {
+  margin-bottom: 20px;
   font-size: 20px;
   line-height: 30px;
   font-weight: 900 !important;
@@ -46,16 +47,7 @@ Link {
   display: block;
   color: #ffffff;
 }
-.titleProjectTwo {
-  font-size: 30px;
-  color: #ffffff;
-  margin-bottom: 20px;
-  font-weight: 400;
-  font-family: "Manrope";
-  line-height: 40px;
-  opacity: 0;
-  display: block;
-}
+
 .title-container {
   display: flex;
   width: 80%;
@@ -64,74 +56,16 @@ Link {
   align-items: flex-end;
   padding-left: 10%;
 }
-.tit {
+.title-bg {
   margin-bottom: 30px;
-}
-.contentProjects {
-  width: 50% !important;
-}
-.vid {
-  position: absolute;
-  z-index: 0;
   width: 100%;
-  height: 89%;
-  top: 0px;
-  left: 0px;
-  overflow: hidden;
-  opacity: 1;
-
-  transition-property: opacity;
-  transition-duration: 1000ms;
-}
-.head {
-  width: 100%;
-  position: relative;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
 }
 
-.btn {
-  background-color: #7f7fff;
-  border: 2px solid #7f7fff;
-  border-radius: 10px;
-  color: white;
-  font-size: 15px;
-  padding: 10px 15px;
-  margin-bottom: 15px;
-
-  &:hover {
-    background-color: white;
-    color: #7f7fff;
-    cursor: pointer;
-  }
-
-  &:focus {
-    outline: none;
-  }
-}
-.play {
-  border: rgb(0, 0, 0) 5px solid;
-  width: 60px;
-  height: 60px;
-  margin-right: 15px;
-  border-radius: 100px;
-  cursor: pointer;
-  i {
-    top: 0;
-    color: rgb(0, 0, 0);
-    font-size: 24px;
-
-    margin-left: 7px;
-  }
-}
-.mystyle {
-  display: none;
-}
+// video
 #background-video {
   height: 100vh;
   width: 100%;
   object-fit: cover;
-  // position: fixed;
   left: 0;
   right: 0;
   top: 0;
@@ -199,6 +133,9 @@ Link {
   margin-left: 50%;
   transform: translateX(-50%);
 }
+
+//project content css
+
 .parent {
   display: grid;
   grid-template-columns: repeat(6, 1fr);

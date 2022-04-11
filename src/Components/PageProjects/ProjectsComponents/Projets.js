@@ -34,7 +34,7 @@ const Projets = () => {
             >
               <div className="item">
                 <div className="title-container">
-                  <div className="tit">
+                  <div className="title-bg">
                     <span className="titleProject">
                       CARREFOUR : Des vendeurs augmentés pour transformer le
                       parcours client
@@ -59,7 +59,7 @@ const Projets = () => {
             >
               <div className="item">
                 <div className="title-container">
-                  <div className="tit">
+                  <div className="title-bg">
                     <span className="titleProject">
                       DARTY : Créer un parcours client sans file d’attente avec
                       le paiement mobile
@@ -85,7 +85,7 @@ const Projets = () => {
             >
               <div className="item">
                 <div className="title-container">
-                  <div className="tit">
+                  <div className="title-bg">
                     <span className="titleProject">
                       BUT : Digitaliser pour réduire les surfaces d’exposition
                       en magasin
@@ -110,7 +110,7 @@ const Projets = () => {
             >
               <div className="item">
                 <div className="title-container">
-                  <div className="tit">
+                  <div className="title-bg">
                     <span className="titleProject">
                       BOUCHERON : Apporter un meilleur service aux clients dans
                       le monde entier
@@ -135,7 +135,7 @@ const Projets = () => {
             >
               <div className="item">
                 <div className="title-container">
-                  <div className="tit">
+                  <div className="title-bg">
                     <span className="titleProject">
                       LCL : Incarner la transformation du groupe à travers ses
                       agences « Cathédrale »
@@ -159,7 +159,7 @@ const Projets = () => {
             >
               <div className="item">
                 <div className="title-container">
-                  <div className="tit">
+                  <div className="title-bg">
                     <span className="titleProject">
                       MAISONS DU MONDE : Catalogues et conseillers augmentés
                     </span>
@@ -183,7 +183,7 @@ const Projets = () => {
             >
               <div className="item">
                 <div className="title-container">
-                  <div className="tit">
+                  <div className="title-bg">
                     <span className="titleProject">
                       MOËT HENNESSY : Optimiser les opérations travel retail au
                       niveau mondial
@@ -207,7 +207,7 @@ const Projets = () => {
             >
               <div className="item">
                 <div className="title-container">
-                  <div className="tit">
+                  <div className="title-bg">
                     <span className="titleProject">
                       SAINT LAURENT : Inspirer et fidéliser les clients
                     </span>
@@ -231,7 +231,7 @@ const Projets = () => {
             >
               <div className="item">
                 <div className="title-container">
-                  <div className="tit">
+                  <div className="title-bg">
                     <span className="titleProject">
                       BNP : Repenser le parcours client en agence bancaire
                     </span>
@@ -254,7 +254,7 @@ const Projets = () => {
             >
               <div className="item">
                 <div className="title-container">
-                  <div className="tit">
+                  <div className="title-bg">
                     <span className="titleProject">
                       BMW : Immerger le client dans l’univers de marque
                     </span>
@@ -278,7 +278,7 @@ const Projets = () => {
             >
               <div className="item">
                 <div className="title-container">
-                  <div className="tit">
+                  <div className="title-bg">
                     <span className="titleProject">
                       INFINITI : Repenser l’accueil et l’attente en concession
                     </span>
@@ -302,7 +302,7 @@ const Projets = () => {
             >
               <div className="item">
                 <div className="title-container">
-                  <div className="tit">
+                  <div className="title-bg">
                     <span className="titleProject">
                       DOMINO’S PIZZA : menu-board connecté
                     </span>
@@ -326,7 +326,7 @@ const Projets = () => {
             >
               <div className="item">
                 <div className="title-container">
-                  <div className="tit">
+                  <div className="title-bg">
                     <span className="titleProject">
                       DARTY : Magnifier l’offre produit avec le Flagship cuisine
                       Paris Wagram
@@ -351,7 +351,7 @@ const Projets = () => {
             >
               <div className="item">
                 <div className="title-container">
-                  <div className="tit">
+                  <div className="title-bg">
                     <span className="titleProject">
                       HEINEKEN : PLV digital connecté
                     </span>
