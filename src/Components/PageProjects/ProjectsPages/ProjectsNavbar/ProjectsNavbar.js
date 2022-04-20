@@ -35,69 +35,69 @@ const Navbar = () => {
       </Link>
       <div>
         <input type="checkbox" id="burger-toggle" />
-        <label for="burger-toggle" class="burger-menu">
-          <div class="line"></div>
-          <div class="line"></div>
-          <div class="line"></div>
+        <label for="burger-toggle" className="burger-menu">
+          <div className="line"></div>
+          <div className="line"></div>
+          <div className="line"></div>
         </label>
-        <div class="menu linee">
+        <div className="menu linee">
           {" "}
           <Link to="/">
             <a>
               <img src={logoWhite} className="menu-logo" />
             </a>
           </Link>
-          <div class="menu-inner  pop-outin">
-            <ul class="menu-nav ">
-              <li class="menu-nav-item">
+          <div className="menu-inner  pop-outin">
+            <ul className="menu-nav ">
+              <li className="menu-nav-item">
                 <Link to="/uni-retail-marketing-data-expertise-groupe-oyez">
                   {" "}
-                  <a class="menu-nav-link " href="#">
+                  <a className="menu-nav-link " href="#">
                     <span>
                       <div>Expertises</div>
                     </span>
                   </a>
                 </Link>
               </li>
-              <li class="menu-nav-item">
+              <li className="menu-nav-item">
                 <Link to="/engineering-consulting-technologie-creativite-metiers-groupe-oyez">
-                  <a class="menu-nav-link" href="#">
+                  <a className="menu-nav-link" href="#">
                     <span>
                       <div>Services</div>
                     </span>
                   </a>
                 </Link>
               </li>
-              <li class="menu-nav-item">
+              <li className="menu-nav-item">
                 <Link to="/methode-groupe-oyez">
-                  <a class="menu-nav-link" href="#">
+                  <a className="menu-nav-link" href="#">
                     <span>
                       <div>Méthode</div>
                     </span>
                   </a>
                 </Link>
               </li>
-              <li class="menu-nav-item">
+              <li className="menu-nav-item">
                 <Link to="/projets-groupe-oyez">
-                  <a class="menu-nav-link" href="#">
+                  <a className="menu-nav-link" href="#">
                     <span>
                       <div>Projets</div>
                     </span>
                   </a>
                 </Link>
               </li>{" "}
-              <li class="menu-nav-item">
+              <li className="menu-nav-item">
                 <Link to="/medias">
-                  <a class="menu-nav-link" href="#">
+                  <a className="menu-nav-link" href="#">
                     <span>
                       <div>Médias</div>
                     </span>
                   </a>
                 </Link>
               </li>{" "}
-              <li class="menu-nav-item">
+              <li className="menu-nav-item">
                 <Link to="/contact">
-                  <a class="menu-nav-link" href="#">
+                  <a className="menu-nav-link" href="#">
                     <span>
                       <div>Contact</div>
                     </span>
@@ -120,14 +120,14 @@ const Navbar = () => {
                 <a href="https://www.facebook.com/groupeOyez/" target="_blank">
                   {" "}
                   <li>
-                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                    <i className="fa fa-facebook" aria-hidden="true"></i>
                   </li>{" "}
                 </a>
                 <a href="https://twitter.com/groupeoyez" target="_blank">
                   {" "}
                   <li>
                     {" "}
-                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                    <i className="fa fa-twitter" aria-hidden="true"></i>
                   </li>{" "}
                 </a>
                 <a
@@ -137,7 +137,7 @@ const Navbar = () => {
                   {" "}
                   <li>
                     {" "}
-                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    <i className="fa fa-linkedin" aria-hidden="true"></i>
                   </li>{" "}
                 </a>
                 <a
@@ -147,7 +147,7 @@ const Navbar = () => {
                   {" "}
                   <li>
                     {" "}
-                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                    <i className="fa fa-instagram" aria-hidden="true"></i>
                   </li>{" "}
                 </a>
               </ul>

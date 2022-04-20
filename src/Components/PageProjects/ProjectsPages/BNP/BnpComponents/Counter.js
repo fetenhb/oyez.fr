@@ -4,7 +4,7 @@ import { Subject } from "../../ProjectsStyle";
 const Counter = () => {
   return (
     <div>
-      <div class="counter">600</div>
+      <div className="counter">600</div>
       <Subject> AGENCES ÉQUIPÉES DE LA TABLETTE </Subject>
     </div>
   );

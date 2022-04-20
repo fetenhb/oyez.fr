@@ -29,15 +29,11 @@ const ProjectsHeader = () => {
       >
         <source src={vid} type="video/mp4" />
       </video>{" "}
-      <div
-        ref={overlay}
-        class="overlay "
-        style={{ backgroundColor: "rgba(0, 0, 0, 0.6)" }}
-      >
-        <div class="clapat-caption animated light-content">
-          <div class="caption-content center-center">
-            <div class="play-icon" onClick={playVideo}>
-              <i class="fa fa-play"></i>
+      <div ref={overlay} className="overlay ">
+        <div className="clapat-caption animated light-content">
+          <div className="caption-content center-center">
+            <div className="play-icon" onClick={playVideo}>
+              <i className="fa fa-play"></i>
             </div>
             <h1 style={{ textAlign: "left", color: "#ffffff" }}>#SHOWREEL</h1>
             <p style={{ textAlign: "left" }}>

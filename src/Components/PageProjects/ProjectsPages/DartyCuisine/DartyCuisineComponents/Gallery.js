@@ -11,8 +11,8 @@ import image8 from "../../../../../Images/images/fullscreen/8.jpg";
 import "./Gallery.scss";
 const Gallery = () => {
   return (
-    <div class="main-container">
-      <ul class="gallery clearfix grid-wrapper">
+    <div className="main-container">
+      <ul className="gallery clearfix grid-wrapper">
         <li>
           <a
             href={image1}

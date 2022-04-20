@@ -20,8 +20,8 @@ const ButCarousel = () => {
         items={1}
         dots={true}
         navText={[
-          "<div class='nav-btn prev-slide'> </div><div class='arrow-prev-line'></div>",
-          "<div class='nav-btn next-slide'></div><div class='arrow-next-line'></div>",
+          "<div className='nav-btn prev-slide'> </div><div className='arrow-prev-line'></div>",
+          "<div className='nav-btn next-slide'></div><div className='arrow-next-line'></div>",
         ]}
         nav={true}
         responsive={{
@@ -54,44 +54,44 @@ const ButCarousel = () => {
             stagePadding: 400,
           },
         }}
-        class="owl-carousel"
+        className="owl-carousel"
       >
-        <div class="lclItem">
+        <div className="lclItem">
           <a href="#">
             <img src={produit1} alt="" />
           </a>
         </div>
-        <div class="lclItem black">
+        <div className="lclItem black">
           <a href="#">
             <img src={produit2} alt="" />
           </a>
         </div>
-        <div class="lclItem">
+        <div className="lclItem">
           <a href="#">
             <img src={produit3} alt="" />
           </a>
         </div>
-        <div class="lclItem black">
+        <div className="lclItem black">
           <a href="#">
             <img src={produit4} alt="" />
           </a>
         </div>
-        <div class="lclItem">
+        <div className="lclItem">
           <a href="#">
             <img src={produit5} alt="" />
           </a>
         </div>
-        <div class="lclItem black">
+        <div className="lclItem black">
           <a href="#">
             <img src={produit6} alt="" />
           </a>
         </div>{" "}
-        <div class="lclItem black">
+        <div className="lclItem black">
           <a href="#">
             <img src={produit7} alt="" />
           </a>
         </div>{" "}
-        <div class="lclItem black">
+        <div className="lclItem black">
           <a href="#">
             <img src={produit8} alt="" />
           </a>

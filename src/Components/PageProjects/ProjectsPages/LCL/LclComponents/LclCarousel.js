@@ -18,8 +18,8 @@ const LclCarousel = () => {
         items={1}
         dots={true}
         navText={[
-          "<div class='nav-btn prev-slide'> </div><div class='arrow-prev-line'></div>",
-          "<div class='nav-btn next-slide'></div><div class='arrow-next-line'></div>",
+          "<div className='nav-btn prev-slide'> </div><div className='arrow-prev-line'></div>",
+          "<div className='nav-btn next-slide'></div><div className='arrow-next-line'></div>",
         ]}
         nav={true}
         responsive={{
@@ -52,34 +52,34 @@ const LclCarousel = () => {
             stagePadding: 400,
           },
         }}
-        class="owl-carousel"
+        className="owl-carousel"
       >
-        <div class="lclItem">
+        <div className="lclItem">
           <a href="#">
             <img src={lcl096} alt="" />
           </a>
         </div>
-        <div class="lclItem black">
+        <div className="lclItem black">
           <a href="#">
             <img src={lcl042} alt="" />
           </a>
         </div>
-        <div class="lclItem">
+        <div className="lclItem">
           <a href="#">
             <img src={lcl052} alt="" />
           </a>
         </div>
-        <div class="lclItem black">
+        <div className="lclItem black">
           <a href="#">
             <img src={lcl134} alt="" />
           </a>
         </div>
-        <div class="lclItem">
+        <div className="lclItem">
           <a href="#">
             <img src={lcl150} alt="" />
           </a>
         </div>
-        <div class="lclItem black">
+        <div className="lclItem black">
           <a href="#">
             <img src={lcl210} alt="" />
           </a>

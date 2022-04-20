@@ -20,7 +20,7 @@ import "./ProjectsContent.scss";
 const Projets = () => {
   return (
     <div>
-      <div class="parent0">
+      <div className="parent0">
         <div className="link div1-1 ">
           {" "}
           <Link to="/projets-groupe-oyez/carrefour">
@@ -72,7 +72,7 @@ const Projets = () => {
           </Link>{" "}
         </div>
       </div>
-      <div class="parent">
+      <div className="parent">
         <div className="link div1 ">
           <Link to="/projets-groupe-oyez/but">
             <div

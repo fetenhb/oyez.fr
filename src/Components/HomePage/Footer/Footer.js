@@ -28,7 +28,7 @@ const Footer = () => {
           Charguia 2, 2035 Ariana.{" "}
         </p>
         <div className="footer__adresse__bottom">
-          <a class="top" href="#"></a>
+          <a className="top" href="#"></a>
 
           <ul>
             <li>

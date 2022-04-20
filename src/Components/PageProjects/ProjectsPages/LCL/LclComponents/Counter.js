@@ -11,15 +11,15 @@ const Counter = () => {
       <Row>
         <Column>
           {" "}
-          <div class="counter">65</div>
+          <div className="counter">65</div>
           <Subject>ÉCRANS HÉTÉROGÈNES</Subject>
         </Column>
         <ColumnWithBorder>
-          <div class="counter">80</div>
+          <div className="counter">80</div>
           <Subject>TABLETTES EN LIBRE-SERVICE</Subject>
         </ColumnWithBorder>
         <ColumnWithBorder>
-          <div class="counter">1</div>
+          <div className="counter">1</div>
           <Subject>CMS UNIQUE POUR TOUT GÉRER </Subject>
         </ColumnWithBorder>
       </Row>

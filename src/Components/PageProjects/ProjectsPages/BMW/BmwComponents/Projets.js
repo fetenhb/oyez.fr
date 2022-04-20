@@ -2,14 +2,7 @@ import React from "react";
 import mdm from "../../../../../Images/MDM-cover2.jpg";
 import infinity from "../../../../../Images/infinity1.gif";
 import "../../../ProjectsComponents/ProjectsContent.scss";
-import {
-  ImgColumn,
-  PizzaImg,
-  Projet,
-  Row,
-  SectionProjet,
-  BackColumn,
-} from "../../ProjectsStyle";
+import { ImgColumn, BackColumn } from "../../ProjectsStyle";
 import { Link } from "react-router-dom";
 
 const Projets = () => {
